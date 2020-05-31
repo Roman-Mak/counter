@@ -6,38 +6,7 @@ import {connect} from 'react-redux'
 import {changeCurrentValue, increment, resetValue, setStartAndMaxValue} from "./reducer";
 
 class App extends React.Component {
-    // state = {
-    //     maxValue: 5,
-    //     startValue: 0,
-    //     currentValue: 0
-    // };
-
-    // componentDidMount() {
-    //     // this.setState({currentValue: this.state.startValue})
-    //     this.props.resetValue();
-    // }
-
-    increaseValue = () => {
-        this.props.increment();
-        // if (this.state.currentValue < this.state.maxValue) {
-        //     this.setState((state) => {
-        //         return {currentValue: state.currentValue + 1}
-        //     });
-        // }
-    };
-
-    resetValue = () => {
-        // this.setState({currentValue: this.state.startValue})
-        this.props.resetValue();
-    };
-
-    changeCurrentValue = (currentValue) => {
-        // this.setState({currentValue})
-        this.props.changeCurrentValue(currentValue);
-    };
-
     setStartAndMaxValue = (maxValue, startValue) => {
-        // this.setState({maxValue: maxValue, startValue: startValue, currentValue: startValue})
         this.props.setStartAndMaxValue(maxValue, startValue);
         this.props.resetValue();
     };
@@ -53,13 +22,14 @@ class App extends React.Component {
                 <Settings setStartAndMaxValue={this.setStartAndMaxValue}
                           maxValue={this.props.maxValue}
                           startValue={this.props.startValue}
-                          changeCurrentValue={this.changeCurrentValue}
+                          changeCurrentValue={this.props.changeCurrentValue}
                 />
-                <Counter {...this.props}
+                <Counter maxValue={this.props.maxValue}
+                         currentValue={this.props.currentValue}
                          disableButtonReset={disableButtonReset}
                          disableButtonInc={disableButtonInc}
-                         increaseValue={this.increaseValue}
-                         resetValue={this.resetValue}
+                         increaseValue={this.props.increment}
+                         resetValue={this.props.resetValue}
                 />
             </div>
         );
