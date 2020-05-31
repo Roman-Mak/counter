@@ -1,0 +1,29 @@
+.counter {
+    width: 360px;
+    height: 100px;
+    border: 2px solid orange;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.display {
+    font-size: 30px;
+}
+
+.lastValue {
+    color: red;
+    font-size: 36px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.enter {
+    font-size: 22px;
+}

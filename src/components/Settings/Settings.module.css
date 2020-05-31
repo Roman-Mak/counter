@@ -1,0 +1,51 @@
+.settings {
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border: 4px solid orange;
+    margin: 100px auto 0;
+    border-radius: 10px;
+}
+
+.inputs {
+    width: 360px;
+    height: 100px;
+    border: 2px solid orange;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.button {
+    width: 360px;
+    height: 75px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.input {
+    margin-left: 40px;
+    font-weight: bold;
+    width: 70px;
+    height: 18px;
+    text-align: center;
+}
+
+.err {
+    margin-left: 40px;
+    font-weight: bold;
+    width: 70px;
+    height: 18px;
+    text-align: center;
+    border: 2px solid red;
+    background-color: #ff666d;
+    border-radius: 2px;
+    font-weight: bold;
+}
