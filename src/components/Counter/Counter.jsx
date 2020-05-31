@@ -6,7 +6,7 @@ import CounterValue from "./CounterValue/CounterValue";
 const Counter = (props) => {
     return (
         <div className={style.counter}>
-            <CounterValue currentValue={props.state.currentValue} maxValue={props.state.maxValue}/>
+            <CounterValue currentValue={props.currentValue} maxValue={props.maxValue}/>
             <div className={style.buttons}>
                 <Button isDisabled={props.disableButtonInc}
                         name={"INCREMENT"}

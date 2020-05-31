@@ -40,7 +40,6 @@ class Settings extends React.Component {
 
     setStartAndMaxValue = () => {
         this.props.setStartAndMaxValue(this.state.maxValue, this.state.startValue);
-        this.buttonDisable(false);
     };
 
     render = () => {

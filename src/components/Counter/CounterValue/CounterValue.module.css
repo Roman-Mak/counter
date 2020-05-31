@@ -1,7 +1,7 @@
 .counter {
     width: 360px;
     height: 100px;
-    border: 2px solid orange;
+    border: 2px solid lightsalmon;
     margin: 20px auto 0;
     display: flex;
     justify-content: center;
